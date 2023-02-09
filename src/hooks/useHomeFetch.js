@@ -1,4 +1,4 @@
-import { useState,useEffect,useRef } from "react";
+import { useState,useEffect,useRef } from "react"; 
 //API
 import API from "../API";
 //Helpers
@@ -65,7 +65,7 @@ export const useHomeFetch = () =>{
         fetchMovies(state.page + 1 ,searchTerm);
         setIsLoadingMore(false);
 
-    },[isLoadingMore]); // ,searchTerm,state.page
+    },[isLoadingMore,searchTerm,state.page]); // ,searchTerm,state.page
 
     // Write to sessionStorage
     useEffect(() => {
